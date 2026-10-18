@@ -27,6 +27,6 @@ public class CoinUI : MonoBehaviour
 
     private void UpdateCoinText()
     {
-        coinText.text = "MONEDAS: " + coins;
+        coinText.text = "GEMAS: " + coins;
     }
 }
