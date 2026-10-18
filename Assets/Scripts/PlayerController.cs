@@ -36,7 +36,6 @@ public class PlayerController : MonoBehaviour
             return;
         }
 
-        // Si no puede moverse, detenemos el movimiento horizontal
         if (!puedeMoverse)
         {
             rd.linearVelocity = new Vector2(0, rd.linearVelocity.y);
