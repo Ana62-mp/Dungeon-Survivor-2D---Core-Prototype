@@ -49,10 +49,7 @@ public class PlayerHealth : MonoBehaviour
             );
         }
 
-        if (CameraShake.Instance != null)
-        {
-            CameraShake.Instance.Sacudir(0.2f, 0.2f);
-        }
+      
 
         Debug.Log("Vidas restantes: " + lives);
 
