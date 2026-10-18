@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1409319975586860261}
   - component: {fileID: 8546869962203996795}
   m_Layer: 0
-  m_Name: Moneda
+  m_Name: Diamond
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28,8 +28,8 @@ Transform:
   m_GameObject: {fileID: 8336827511522672210}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.7073, y: -1.27, z: 0}
-  m_LocalScale: {x: 1.3200922, y: 1.1706983, z: 1}
+  m_LocalPosition: {x: 0.80712, y: -1.294, z: 0}
+  m_LocalScale: {x: 0.25713605, y: 0.2280361, z: 0.19478638}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -83,7 +83,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -319971018, guid: cec6ab7f8e521e748afa1183280caaeb, type: 3}
+  m_Sprite: {fileID: 2998024342783610758, guid: 0ccd0e09a020f3e429bbb8be41e61dbb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -149,5 +149,5 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.00000004515188, y: 0.012221898}
-  m_Radius: 0.28539288
+  m_Offset: {x: -0.00988334, y: 0.22088285}
+  m_Radius: 1.9218224

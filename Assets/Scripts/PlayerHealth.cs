@@ -56,19 +56,12 @@ public class PlayerHealth : MonoBehaviour
 
         Debug.Log("Vidas restantes: " + lives);
 
-        // Animación de daño
-        if (animator != null)
-        {
-            animator.SetTrigger("Hurt1");
-        }
-
         if (lives <= 0)
         {
             RestartLevel();
             return;
         }
 
-        // Dirección contraria al enemigo o trampa
         float direction;
 
         if (transform.position.x < enemy.position.x)
@@ -88,10 +81,8 @@ public class PlayerHealth : MonoBehaviour
         isInvulnerable = true;
         IsKnockback = true;
 
-        // Quitamos la velocidad anterior
         rd.linearVelocity = Vector2.zero;
 
-        // Aplicamos empujón
         rd.AddForce(
             new Vector2(
                 direction * knockbackForce,
@@ -100,12 +91,10 @@ public class PlayerHealth : MonoBehaviour
             ForceMode2D.Impulse
         );
 
-        // Durante este tiempo el jugador NO controla el movimiento
         yield return new WaitForSeconds(knockbackTime);
 
         IsKnockback = false;
 
-        // Sigue siendo invulnerable hasta completar el tiempo
         yield return new WaitForSeconds(
             invulnerabilityTime - knockbackTime
         );

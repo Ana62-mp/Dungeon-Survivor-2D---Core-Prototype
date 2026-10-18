@@ -45,7 +45,6 @@ public class PlayerAttack : MonoBehaviour
 
         foreach (Collider2D enemy in hitEnemies)
         {
-            // Daño a enemigos normales
             EnemyHealth enemyHealth = enemy.GetComponent<EnemyHealth>();
 
             if (enemyHealth != null)
@@ -53,13 +52,6 @@ public class PlayerAttack : MonoBehaviour
                 enemyHealth.TakeDamage(attackDamage);
             }
 
-            // Daño al Boss
-            BossController boss = enemy.GetComponent<BossController>();
-
-            if (boss != null)
-            {
-                boss.TakeDamage(attackDamage);
-            }
         }
     }
 
